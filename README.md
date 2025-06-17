@@ -6,6 +6,19 @@
 
 Its built with **Next.js**, **Monaco Editor** (for the code editor), **Shadcn** (for the component library), **Framer motion** (for the animation), **Prismjs**, **React TanStack Query** (for state management), and **WebSocket** (for real-time communication with the LLM agent). It includes features like plugin session management, a chat interface for merchant requests, and a code editor for viewing and managing generated plugins. The project also supports Docker for local development and production deployment.
 
+## Documentary Video
+
+To learn more about SecretEcho Plugin Generator App and see a walkthrough of its features, watch documentary video:
+
+### Watch the SecretEcho Plugin Generator Documentary Video
+
+[![alt text](https://github.com/user-attachments/assets/42ff8910-f42d-4d37-9457-c2b769fcde8f)](https://www.youtube.com/watch?v=pgkpgvwFMKg)
+
+## Deployed on Railway ( Frontend )  :  [SecretEcho Plugin Generator Frontend](https://secretecho-generator-frontend-production.up.railway.app/)
+
+## Deployed on Railway ( Backend )  :  [SecretEcho Plugin Generator Backend](https://secretecho-generator-backend-production.up.railway.app/)
+
+
 ### Features
 
 - **Landing Page**: A welcoming page introducing the plugin generator service.
