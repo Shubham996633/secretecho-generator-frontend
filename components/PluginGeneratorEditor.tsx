@@ -55,7 +55,6 @@ export default function PluginGeneratorEditor({ pluginId }: { pluginId: string }
 					.replace(/```php\n|```/g, "")
 					.replace(/\\n/g, "\n")
 					.trim();
-				console.log("Received new code:", cleanedCode);
 				setCode(cleanedCode);
 				setIsFinal(data.isFinal || false);
 				if (data.isFinal) {
@@ -73,7 +72,6 @@ export default function PluginGeneratorEditor({ pluginId }: { pluginId: string }
 
 	// Update code when lastCode or pluginId changes
 	useEffect(() => {
-		console.log("lastCode updated:", lastCode);
 		setCode(lastCode || "");
 	}, [lastCode, pluginId]);
 
@@ -160,7 +158,6 @@ export default function PluginGeneratorEditor({ pluginId }: { pluginId: string }
 
 	// Filter messages to only show chat messages
 	const chatMessages = messages.filter((msg) => !msg.content.startsWith("<?php"));
-	console.log(chatMessages);
 
 	return (
 		<div className="container mx-auto px-4 py-3 flex flex-col lg:flex-row gap-6">

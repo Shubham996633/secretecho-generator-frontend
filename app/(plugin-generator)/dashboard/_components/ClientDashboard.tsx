@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useCreatePluginGenerator, useGetPluginGenerators } from "@/providers/plugin_generator";
 import { CreatePluginGeneratorRequest } from "@/types/plugins.types";
+import { Loader } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -58,14 +59,25 @@ function CreatePluginSession() {
 
 function PluginSessions() {
 	const { data: pluginSessions, isFetching } = useGetPluginGenerators();
-	console.log(pluginSessions);
 
 	if (isFetching) {
-		return <p className="text-gray-600 dark:text-gray-100">Loading plugin sessions...</p>;
+		return (
+			<div className="flex flex-row gap-3 ">
+				<Loader className="animate-spin h-9 w-9" />
+				<p className="text-gray-600 dark:text-gray-100 text-2xl mt-1">Loading plugin sessions...</p>
+			</div>
+		);
 	}
 
 	if (!pluginSessions || pluginSessions.length === 0) {
-		return <p className="text-gray-600 dark:text-gray-100">No plugin sessions found. Create one to get started!</p>;
+		return (
+			<div className="px-5">
+				<p className="text-gray-600 dark:text-gray-100 p-4 text-2xl">
+					No plugin sessions found. <br />
+				</p>
+				<p className="text-gray-600 dark:text-gray-100 p-4 text-2xl">Create one to get started!</p>
+			</div>
+		);
 	}
 
 	return (

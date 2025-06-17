@@ -8,8 +8,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import AuthImage from "../../public/img-login.svg";
-import logo from "../../public/logo.png";
+import AuthImage from "../../../public/img-login.svg";
+import logo from "../../../public/logo.png";
 
 export default function AuthPage() {
 	const searchParams = useSearchParams();
