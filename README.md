@@ -4,7 +4,7 @@
 
 **SecretEcho Frontend** is a web-based application designed to assist eCommerce merchants in generating custom single-file WooCommerce plugins using an LLM (Large Language Model) agent.
 
-The frontend is built with **Next.js**, **Monaco Editor** (for the code editor), **React TanStack Query** (for state management), and **WebSocket** (for real-time communication with the LLM agent). It includes features like plugin session management, a chat interface for merchant requests, and a code editor for viewing and managing generated plugins. The project also supports Docker for local development and production deployment.
+Its built with **Next.js**, **Monaco Editor** (for the code editor), **Shadcn** (for the component library), **Framer motion** (for the animation), **Prismjs**, **React TanStack Query** (for state management), and **WebSocket** (for real-time communication with the LLM agent). It includes features like plugin session management, a chat interface for merchant requests, and a code editor for viewing and managing generated plugins. The project also supports Docker for local development and production deployment.
 
 ### Features
 
@@ -14,26 +14,35 @@ The frontend is built with **Next.js**, **Monaco Editor** (for the code editor),
 - **Chat Interface**: Allows merchants to send requests to the LLM and view responses.
 - **Plugin Generator Editor**: A VS Code-like editor to view, copy, download, and finalize generated plugins.
 - **Docker Support**: Run the app locally or in production using Docker.
+- **Deploymeent on Railway with Docker Support**: Deployed the final build on Railway.app using Docker.
 - **Local Testing**: Plugins tested with Local (<https://localwp.com/>) on a WordPress/WooCommerce site.
 
 ## Screenshots
 
 Below are placeholders for screenshots of the application. (Replace these with actual images.)
 
-- **Landing Page**  
+- **Landing Page**
+  
 ![alt text](image.png)  
+
 *The landing page welcomes users and provides an overview of the plugin generator service.*
 
-- **Authentication**  
+- **Authentication**
+  
  ![alt text](image-1.png)
+ 
   *The authentication page allows users to log in securely (assumed feature).*
 
-- **Dashboard**  
+- **Dashboard**
+  
 ![alt text](image-2.png)  
+
 *The dashboard displays plugin sessions and provides quick access to the plugin generator.*
 
-- **Chat Interface and Plugin Generator Editor**  
+- **Chat Interface and Plugin Generator Editor**
+  
 ![alt text](image-3.png)
+
   *The chat interface (left) for merchant requests and the code editor (right) for viewing generated plugins.*
 
 ## Prerequisites
