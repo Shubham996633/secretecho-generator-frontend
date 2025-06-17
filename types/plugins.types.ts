@@ -38,7 +38,7 @@ export type Message = {
 	timestamp: string;
 	isLoading?: boolean;
 	avatar?: string;
-	type: "chat" | "code";
+	type?: "chat" | "code";
 };
 
 // WebSocket message structure
